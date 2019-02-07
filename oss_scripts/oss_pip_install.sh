@@ -11,11 +11,9 @@ then
   echo "Using installed ffmpeg"
 else
   echo "Installing ffmpeg"
-  sudo add-apt-repository -y ppa:jonathonf/ffmpeg-4
-  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6B05F25D762E3157
+  sudo add-apt-repository ppa:mc3man/trusty-media
   sudo apt-get update
-  sudo apt-get install -y \
-    ffmpeg libavcodec58 libavdevice58 libavfilter7 libavformat58
+  sudo apt-get install -y ffmpeg
 fi
 
 if [[ "$TF_VERSION" == "tf-nightly"  ]]
