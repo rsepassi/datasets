@@ -11,7 +11,7 @@ then
   echo "Using installed ffmpeg"
 else
   echo "Installing ffmpeg"
-  sudo add-apt-repository -y -q ppa:mc3man/trusty-media
+  sudo add-apt-repository -y ppa:mc3man/trusty-media
   sudo apt-get update -q
   sudo apt-get install -q -y ffmpeg
 fi
