@@ -11,9 +11,9 @@ then
   echo "Using installed ffmpeg"
 else
   echo "Installing ffmpeg"
-  sudo add-apt-repository -y ppa:mc3man/trusty-media
-  sudo apt-get update
-  sudo apt-get install -y ffmpeg
+  sudo add-apt-repository -y -q ppa:mc3man/trusty-media
+  sudo apt-get update -q
+  sudo apt-get install -q -y ffmpeg
 fi
 
 if [[ "$TF_VERSION" == "tf-nightly"  ]]
